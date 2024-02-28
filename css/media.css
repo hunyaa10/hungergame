@@ -430,8 +430,8 @@
   }
 
   .banner .b_img{
-    width: 100%;
-    top: 2%;
+    width: 200%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
