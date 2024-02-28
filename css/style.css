@@ -1,0 +1,373 @@
+@import url(./reset.css);
+
+@font-face {
+  font-family: 'Cafe24';
+  src: url(../font/Cafe24/Cafe24Classictype-v1.1.ttf);
+}
+@font-face {
+  font-family: 'Hahmlet';
+  src: url(../font/Hahmlet/Hahmlet-VariableFont_wght.ttf);
+}
+
+
+body{
+  background-color: #000;
+  color: #fff;
+  font-family: 'Hahmlet';
+  position: relative;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Cafe24';
+  font-size: 20px;
+  color: #DCB142;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+header .header_i{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 3%;
+}
+header .header_i .h_menu{
+  display: none;
+  opacity: 0.7;
+}
+header .header_i .h_menu:hover{
+  opacity: 1;
+}
+header .header_i ul{
+  width: 1140px;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+header .header_i ul li>a:hover{
+  color: rgba(255, 255, 255, 0.8)
+}
+/* //header */
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.banner .b_logo{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 99;
+}
+.banner .b_img{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.banner .b_img .kat_img{
+  opacity: 0;
+  /* 화면시작 시 나타나게 */
+}
+.banner .b_img .kat_img img{
+  height: 100vh;
+}
+nav{
+  width: 40vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* right: 0; */
+  right: -100%;
+  /* 메뉴바 클릭시 나타나게 */
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10% 5% 5% 5%;
+  transition: 1s;
+}
+.nav_i{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.nav_i ul{
+  width: 100%;
+}
+.nav_i ul li{
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-family: 'Cafe24';
+  font-size: 20px;
+  color: #DCB142;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.nav_i ul li a{
+  display: block;
+  width: 100%;
+}
+.nav_i ul li a:hover{
+  color: rgba(255, 255, 255, 0.8)
+}
+.nav_i button{
+  display: block;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.nav_i button:hover{
+  color: rgba(255, 255, 255, 0.7);
+}
+/* //banner */
+
+section h2{
+  width: fit-content;
+  font-family: 'Cafe24';
+  font-size: 4vw;
+  margin-bottom: 5%;
+}
+section h2 span{
+  font-size: 6vw;
+  color: #DCB142;
+}
+.right_t{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.sec01{
+  width: 100%;
+  background-image: url(../img/sec01_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10% 0 10% 0;
+}
+.sec01 .sec01_t .title{
+  display: flex;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.sec01 .sec01_t h4{
+  font-weight: 700;
+  font-size: 30px;
+  margin-right: 5px;
+}
+.sec01 .sec01_t h5{
+  font-weight: 500;
+  font-size: 20px;
+}
+.sec01 .sec01_t p{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 220%;
+  letter-spacing: 3px;
+}
+/* //sec01 */
+
+.sec02{
+  width: 1140px;
+  max-width: 100%;
+  margin: auto;
+  padding: 5% 0 10% 0;
+}
+.sec02 .posterbox{
+  width: 100%;
+  height: auto;
+}
+.sec02 .posterbox .pbox{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pbox .imgbox{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.pbox .imgbox .mbox{
+  width: 267px;
+  height: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  opacity: 0;
+  /* 마우스오버시 투명도조절 */
+}
+.pbox .imgbox .mbox a{
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.pbox .imgbox .mbox a:hover{
+  text-decoration: underline;
+}
+.pbox .textbox{
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.pbox .textbox span{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 20px 0 10px 0;
+}
+/* //sec02 */
+
+.sec03{
+  padding: 5% 0 5% 0;
+}
+.sec03 .container .text .title{
+  display: flex;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.sec03 .container .text h4{
+  font-size: 25px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.sec03 .container .text h6{
+  font-size: 18px;
+  font-weight: 300;
+}
+.sec03 .container .text h5{
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px 0;
+}
+.sec03 .container .text p{
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 180%;
+  letter-spacing: 2px;
+}
+/* //sec03 */
+
+.sec04{
+  padding: 5% 0 10% 0;
+}
+.sec04 .row{
+  background-image: url(../img/sec04_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  display: flex;
+  justify-content: end;
+}
+.sec04 .videobox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sec04 .videobox .vbox{
+  width: 355px;
+  max-width: 100%;
+  padding: 2%;
+  position: relative;
+}
+.sec04 .videobox .vbox a{
+  display: block;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 99;
+  opacity: 0.5;
+}
+.sec04 .videobox .vbox a:hover{
+  opacity: 1;
+}
+.sec04 .Abox{
+  display: none;
+}
+/* //sec04 */
+
+button{
+  display: block;
+  width: 40px;
+  padding: 0;
+  background: none;
+  border: none;
+  opacity: 0.5;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  display: none;
+}
+button img{
+  width: 100%;
+}
+button:hover{
+  opacity: 1;
+}
+/* //top button */
+
+footer{
+  width: 100%;
+  height: 70vh;
+  background-image: url(../img/footer_bg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.fbox{
+  width: 90%;
+  margin: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  padding-top: 2%;
+}
+.fbox .f_title{
+  width: 20%;
+}
+.fbox .f_title a{
+  display: block;
+  width: fit-content;
+}
+.fbox .f_text{
+  width: 60%;
+}
+.fbox .f_text p{
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 180%;
+}
+.fbox .f_icon{
+  width: 20%;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+}
+.fbox .f_icon a{
+  display: block;
+  width: fit-content;
+  margin: 0 3%;
+}
+/* //footer */

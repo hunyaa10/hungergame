@@ -1,0 +1,529 @@
+@media screen and (max-width:1300px){
+  .banner .b_logo{
+    left: 3%;
+  }
+  .banner .b_img{
+    right: -25%;
+  }
+  
+  .sec02 .posterbox{
+    width: 90%;
+    margin: auto;
+  }
+  .pbox .imgbox{
+    width: 80%;
+  }
+
+  footer{
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width:1200px){
+  header .header_i ul{
+    width: 90%;
+  }
+
+  .banner .b_logo{
+    width: 45%;
+    left: 5%;
+  }
+  .banner .b_img{
+    right: -30%;
+  }
+
+
+  .sec04 .row{
+    background-image: none;
+    justify-content: center;
+  }
+  .sec04 .videobox{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:991px){
+  header .header_i{
+    display: flex;
+    justify-content: space-between;
+  }
+  header .header_i ul{
+    margin: 0;
+  }
+  header ul li:not(:nth-child(3)){
+    display: none;
+  }
+  header .header_i .h_menu{
+    display: block;
+  }
+
+  .banner .b_logo{
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .banner .b_img{
+    right: -40%;
+    opacity: 0.5;
+  }
+
+  .sec01 .sec01_t .title{
+    margin-bottom: 15px;
+  }
+  .sec01 .sec01_t h4{
+    font-size: 25px;
+  }
+  .sec01 .sec01_t h5{
+    font-size: 15px;
+  }
+  .sec01 .sec01_t p{
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 2px;
+  }
+
+  .pbox .imgbox .mbox a{
+    font-size: 12px;
+  }
+  .pbox .textbox{
+    font-size: 14px;
+  }
+  .pbox .textbox span{
+    font-size: 16px;
+  }
+
+  .sec03 .container .text .title{
+    margin-bottom: 20px;
+  }
+  .sec03 .container .text h4{
+    font-size: 20px;
+  }
+  .sec03 .container .text h6{
+    font-size: 14px;
+  }
+  .sec03 .container .text h5{
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .sec03 .container .text p{
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 1px;
+    margin-top: 5px;
+  }
+
+  .sec04 .videobox .vbox{
+    width: 340px;
+    max-width: 100%;
+  }
+
+  button{
+    width: 30px;
+    bottom: 3%;
+  }
+
+  footer{
+    height: 40vh;
+  }
+  .fbox .f_title a{
+    max-width: 112px;
+  }
+  .fbox .f_title a img{
+    width: 100%;
+  }
+  .fbox .f_text p{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 160%;
+  }
+  .fbox .f_icon a{
+    max-width: 20px;
+  }
+  .fbox .f_icon a img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:767px){
+  br{
+    display: none;
+  }
+  .banner .b_img{
+    right: -60%;
+    opacity: 0.3;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .banner .b_img .kat_img img{
+    height: 100%;
+  }
+
+  .right_t{
+    justify-content: flex-start;
+  }
+
+  .sec01 .container .row .Dimg{
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .sec01 .sec01_t .title{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .sec01 .sec01_t h4{
+    margin-right: 0;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+  .sec01 .sec01_t h5{
+    font-size: 15px;
+  }
+  .sec01 .sec01_t p{
+    font-size: 14px;
+  }
+
+  .sec03 .container .row .t_order{
+    order: 2;
+  }
+  .sec03 .container .row .i_order{
+    order: 1;
+  }
+  .sec03 .container .row:not(:last-child){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10%;
+  }
+  .sec03 .container .text .title{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec03 .container .text h4{
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
+  .sec03 .container .text p{
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+
+  .sec04{
+    position: relative;
+  }
+  .sec04 .container .con_i{
+    padding: 0 10%;
+  }
+  .sec04 .container h2{
+    padding: 0;
+  }
+  .sec04 .container .row{
+    overflow: hidden;
+  }
+  .sec04 .videobox{
+    height: 40vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .sec04 .videobox .vbox{
+    padding: 8%;
+  }
+  .sec04 .Abox{
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  .sec04 .Abox .Abox_i .right_A{
+    float: right;
+  }
+  .sec04 .Abox .Abox_i .left_A{
+    float: left;
+    display: none;
+  }
+  .sec04 .Abox .Abox_i a{
+    display: inline-block;
+    opacity: 0.5;
+  }
+  .sec04 .Abox .Abox_i a:hover{
+    opacity: 1;
+  }
+
+  button{
+    width: 20px;
+  }
+
+  footer{
+    height: 30vh;
+  }
+  .fbox .f_title{
+    width: 30%;
+  }
+  .fbox .f_text{
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width:575px){
+  header{
+    height: 80px;
+  }
+  header .header_i{
+    padding: 0 5%;
+  }
+  header .header_i .h_logo a{
+    display: block;
+    width: 60px;
+  }
+  header .header_i .h_logo a img{
+    width: 100%;
+  }
+  header .header_i .h_menu a{
+    display: block;
+    width: 40px;
+  }
+  header .header_i .h_menu a img{
+    width: 100%;
+  }
+
+  .banner .b_logo{
+    width: 60%;
+  }
+  .banner .b_img{
+    width: 180%;
+    opacity: 0.2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .nav_i ul li{
+    font-size: 16px;
+  }
+
+  section h2{
+    margin: auto;
+    margin-bottom: 5%;
+    font-size: 5vw;
+  }
+  section h2 span{
+    font-size: 7vw;
+  }
+  section .container{
+    padding: 0 10%;
+  }
+
+  .sec01 .container .row .Dimg{
+    margin-bottom: 30px;
+  }
+  .sec01 .sec01_t .title{
+    margin-bottom: 15px;
+  }
+  .sec01 .sec01_t h4{
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  .sec01 .sec01_t h5{
+    font-size: 11px;
+  }
+  .sec01 .sec01_t p{
+    font-size: 12px;
+    line-height: 220%;
+  }
+
+  .sec02 .container{
+    padding: 0 20%;
+  }
+  .pbox .imgbox{
+    width: 70%;
+  }
+  .pbox .imgbox .mbox a{
+    font-size: 10px;
+  }
+  .pbox .textbox{
+    font-size: 12px;
+  }
+  .pbox .textbox span{
+    font-size: 14px;
+  }
+
+  .sec03 .row figure{
+    width: 80%;
+    margin: auto;
+  }
+  .sec03 .container .text h4{
+    font-size: 18px;
+  }
+  .sec03 .container .text h6{
+    font-size: 13px;
+  }
+  .sec03 .container .text h5{
+    font-size: 14px;
+  }
+  .sec03 .container .text p{
+    font-size: 12px;
+    line-height: 220%;
+  }
+
+  .sec04 .videobox{
+    height: 30vh;
+  }
+  .sec04 .videobox .vbox a{
+    display: block;
+    width: 40px;
+  }
+  .sec04 .videobox .vbox a img{
+    width: 100%;
+  }
+  .sec04 .container .Abox{
+    padding: 0 10%;
+  }
+
+  footer{
+    height: 25vh;
+  }
+  .fbox .f_title a{
+    max-width: 90px;
+  }
+  .fbox .f_title a img{
+    width: 100%;
+  }
+  .fbox .f_text{
+    width: 50%;
+  }
+  .fbox .f_text p{
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .fbox .f_icon{
+    width: 30%;
+  }
+  .fbox .f_icon a{
+    max-width: 16px;
+  }
+  .fbox .f_icon a img{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:400px){
+  header{
+    height: 70px;
+  }
+  header .header_i .h_logo a{
+    display: block;
+    width: 50px;
+  }
+  header .header_i .h_logo a img{
+    width: 100%;
+  }
+  header .header_i .h_menu a{
+    display: block;
+    width: 35px;
+  }
+  header .header_i .h_menu a img{
+    width: 100%;
+  }
+
+  .banner .b_img{
+    width: 180%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%,-50%);
+  }
+  nav{
+    width: 50vw;
+  }
+  .nav_i ul li{
+    font-size: 14px;
+  }
+  .nav_i button{
+    font-size: 10px;
+  }
+
+  section h2{
+    margin-bottom: 7%;
+  }
+  .sec01{
+    padding: 25% 0 20% 0;
+    height: 100%;
+  }
+  .sec02{
+    padding: 5% 0 20% 0;
+  }
+  .sec03{
+    padding: 5% 0 20% 0;
+  }
+  .sec04{
+    padding: 5% 0 10% 0;
+  }
+
+  .sec01 .sec01_t h4{
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .sec01 .sec01_t p{
+    font-size: 10px;
+  }
+
+  .sec02 .container{
+    padding: 0 25%;
+  }
+  .sec02 .container .posterbox{
+    padding: 10% 0;
+  }
+  .pbox .imgbox .mbox a{
+    font-size: 8px;
+  }
+  .pbox .textbox{
+    font-size: 10px;
+  }
+  .pbox .textbox span{
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 10px 0 5px 0;
+  }
+
+  .sec03 .container .text h4{
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .sec03 .container .text h6{
+    font-size: 11px;
+  }
+  .sec03 .container .text h5{
+    font-size: 12px;
+  }
+  .sec03 .container .text p{
+    font-size: 10px;
+  }
+
+  .sec04 .videobox{
+    height: 25vh;
+  }
+  .sec04 .videobox .vbox a{
+    display: block;
+    width: 35px;
+  }
+
+  .fbox .f_title a{
+    max-width: 70px;
+  }
+  .fbox .f_title a img{
+    width: 100%;
+  }
+  .fbox .f_text p{
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+  .fbox .f_icon a{
+    max-width: 14px;
+  }
+  .fbox .f_icon a img{
+    width: 100%;
+  }
+}
