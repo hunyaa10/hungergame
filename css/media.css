@@ -509,6 +509,9 @@
     display: block;
     width: 35px;
   }
+  .sec04 .Abox{
+    top: 57%;
+  }
 
   .fbox .f_title a{
     max-width: 70px;
