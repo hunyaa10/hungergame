@@ -4,25 +4,61 @@ $(function(){
     opacity : '1'
   },2000)
 
+  // 스크롤업 시 메뉴보이게
+  let scr = 0;
+  $(window).scroll(function(){
+    let scrollT = $(window).scrollTop();
+    // console.log(scrollT)
+  
+    if(scrollT > scr){
+      $('header').addClass('hide')
+    } else {
+      $('header').removeClass('hide')
+    }
+  
+    scr = scrollT;
+  })
+
   // 메뉴클릭시 해당 섹션으로 이동
   $('.a1').click(function(){
     $('html').animate({
       scrollTop: $('.sec01').offset().top
     })
+    $('nav').css({right: '-100%'})
   }),
   $('.a2').click(function(){
     $('html').animate({
       scrollTop: $('.sec02').offset().top
     })
+    $('nav').css({right: '-100%'})
   }),
   $('.a3').click(function(){
     $('html').animate({
       scrollTop: $('.sec03').offset().top
     })
+    $('nav').css({right: '-100%'})
   }),
   $('.a4').click(function(){
     $('html').animate({
       scrollTop: $('.sec04').offset().top
+    })
+    $('nav').css({right: '-100%'})
+  })
+
+  // 메뉴바 클릭시 nav 나타나게
+  $('.h_menu').click(function(){
+    $('nav').css({
+      right: '0'
+    })
+  })
+  $('.cbtn').click(function(){
+    $('nav').css({
+      right: '-100%'
+    })
+  })
+  $(window).resize(function(){
+    $('nav').css({
+      right: '-100%'
     })
   })
 
@@ -61,23 +97,6 @@ $(function(){
       },
     ]
   });
-
-  // 메뉴바 클릭시 nav 나타나게
-  $('.h_menu').click(function(){
-    $('nav').css({
-      right: '0'
-    })
-  })
-  $('.close').click(function(){
-    $('nav').css({
-      right: '-100%'
-    })
-  })
-  $(window).resize(function(){
-    $('nav').css({
-      right: '-100%'
-    })
-  })
 
   // sec02, 마우스오버 시 more박스 나타나게
   $('.p1').on({
@@ -143,7 +162,7 @@ $(function(){
 
   // sec04, 화살표 클릭시 이미지 슬라이드
   let w = $('.vbox').outerWidth();
-  console.log(w)
+  // console.log(w)
 
   $('.right_A').click(function(){
     let vl = $('.videobox').offset().left;
