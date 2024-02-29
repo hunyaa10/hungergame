@@ -24,29 +24,76 @@
       color: #fff;
       font-family: 'Hahmlet';
     }
+
+    header{
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      padding: 0 2%;
+    }
+    header a{
+      display: block;
+    }
+    header a img{
+      width: 50px;
+    }
+
     .all{
       width: 1200px;
       height: 100vh;
       margin: auto;
-      text-align: center;
     }
-    h1{
+    .all h1{
       font-family: 'Cafe24';
       color: #DCB142;
       margin: 3% 0;
+      text-align: center;
     }
-    figure{
+
+    section{
+      display: flex;
+    }
+    section figure{
+      margin-right: 2rem;
+    }
+    section .text{
+      line-height: 200%;
+    }
+    section .text h4{
       margin-bottom: 1rem;
+    }
+    section .text p{
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <a href="../index.html">
+      <img src="../img/header_logo.png" alt="MJ_logo">
+    </a>
+  </header>
+
   <div class="all">
     <h1>헝거게임 : 노래하는 새와 뱀의 발라드</h1>
-    <figure>
-      <img src="../img/sec02_poster5.jpg" alt="poster5">
-    </figure>
-    <p>설명</p>
+    <section>
+      <figure>
+        <img src="../img/sec02_poster5.jpg" alt="poster5">
+      </figure>
+      <div class="text">
+        <h4>
+          헝거 게임 시리즈 3부작의 64년전,<br>
+          코리올라누스 스노우의 아카데미 학생시절 이야기.
+        </h4>
+        <p>
+          반란의 불씨를 잠재우기 위해 시작된 잔인한 서바이벌 헝거게임.<br>
+          헝거게임 10회를 맞아 ‘멘토제’가 도입되고 ‘스노우’는 12구역의 소녀 ‘루시 그레이’의 멘토가 된다.<br>
+          그는 몰락한 가문의 영광을 되찾기 위해 ‘루시 그레이’를 헝거게임에서 우승 시키려 수단과 방법을 가리지 않는데…
+        </p>
+      </div>
+    </section>
   </div>
 
 </body>
