@@ -151,7 +151,7 @@ $(function(){
     let stop = w*3
     $('.videobox').animate({
       left: '-=' + w
-    },1000)
+    },500)
     $('.left_A').css({
       display: 'block'
     })
@@ -168,7 +168,7 @@ $(function(){
     console.log(vl)
     $('.videobox').animate({
       left: '+=' + w
-    },1000)
+    },500)
     $('.right_A').css({
       display: 'block'
     })
