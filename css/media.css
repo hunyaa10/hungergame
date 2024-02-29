@@ -168,9 +168,6 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  .banner .b_img .kat_img img{
-    /* height: 100%; */
-  }
 
   .right_t{
     justify-content: flex-start;
@@ -457,11 +454,6 @@
     width: 100%;
   }
 
-  /* .banner .b_img{
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  } */
   nav{
     width: 50vw;
   }
