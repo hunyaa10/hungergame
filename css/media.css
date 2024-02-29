@@ -130,7 +130,7 @@
     max-width: 100%;
   }
 
-  button{
+  .top{
     width: 30px;
     bottom: 3%;
   }
@@ -274,7 +274,7 @@
     opacity: 1;
   }
 
-  button{
+  .top{
     width: 20px;
   }
 
@@ -322,7 +322,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
   }
-  .nav_i ul li{
+  nav ul li{
     font-size: 16px;
   }
 
@@ -457,10 +457,10 @@
   nav{
     width: 50vw;
   }
-  .nav_i ul li{
+  nav ul li{
     font-size: 14px;
   }
-  .nav_i button{
+  nav .cbtn{
     font-size: 10px;
   }
 

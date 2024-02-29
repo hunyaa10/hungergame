@@ -24,7 +24,7 @@ header{
   font-family: 'Cafe24';
   font-size: 20px;
   color: #DCB142;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
@@ -55,6 +55,10 @@ header .header_i ul{
 header .header_i ul li>a:hover{
   color: rgba(255, 255, 255, 0.8)
 }
+
+.hide{
+  top: -100%;
+}
 /* //header */
 
 .banner{
@@ -82,8 +86,8 @@ header .header_i ul li>a:hover{
 nav{
   width: 40vw;
   height: 100%;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  /* top: 0; */
   /* right: 0; */
   right: -100%;
   /* 메뉴바 클릭시 나타나게 */
@@ -92,15 +96,10 @@ nav{
   padding: 10% 5% 5% 5%;
   transition: 1s;
 }
-.nav_i{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.nav_i ul{
+nav ul{
   width: 100%;
 }
-.nav_i ul li{
+nav ul li{
   width: 100%;
   padding: 0.7rem 1rem;
   font-family: 'Cafe24';
@@ -108,25 +107,25 @@ nav{
   color: #DCB142;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.nav_i ul li a{
+nav ul li a{
   display: block;
   width: 100%;
 }
-.nav_i ul li a:hover{
+nav ul li a:hover{
   color: rgba(255, 255, 255, 0.8)
 }
-.nav_i button{
+nav .cbtn{
   display: block;
   position: absolute;
   right: 10%;
-  bottom: 0;
+  bottom: 5%;
   background-color: transparent;
   border: none;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
 }
-.nav_i button:hover{
-  color: rgba(255, 255, 255, 0.7);
+nav .cbtn:hover{
+  color: rgba(255, 255, 255, 0.8);
 }
 /* //banner */
 
@@ -305,7 +304,7 @@ section h2 span{
 }
 /* //sec04 */
 
-button{
+.top{
   display: block;
   width: 40px;
   padding: 0;
@@ -317,10 +316,10 @@ button{
   bottom: 5%;
   display: none;
 }
-button img{
+.top img{
   width: 100%;
 }
-button:hover{
+.top:hover{
   opacity: 1;
 }
 /* //top button */
