@@ -78,9 +78,7 @@ header .header_i ul li>a:hover{
   opacity: 0;
   /* 화면시작 시 나타나게 */
 }
-.banner .b_img .kat_img img{
-  /* height: 100vh; */
-}
+
 nav{
   width: 40vw;
   height: 100%;
