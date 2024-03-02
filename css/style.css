@@ -91,7 +91,7 @@ nav{
   /* right: 0; */
   right: -100%;
   /* 메뉴바 클릭시 나타나게 */
-  z-index: 999;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 10% 5% 5% 5%;
   transition: 1s;
